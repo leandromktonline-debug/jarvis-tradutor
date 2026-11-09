@@ -1,5 +1,5 @@
 python-telegram-bot
-yt-dlp
+youtube-transcript-api
 groq
 google-generativeai
 edge-tts
