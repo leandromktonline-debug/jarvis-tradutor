@@ -31,6 +31,11 @@ async def processar_video(update: Update, context: ContextTypes.DEFAULT_TYPE):
             'format': 'bestaudio/best',
             'outtmpl': audio_original.replace('.mp3', '.%(ext)s'),
             'postprocessors': [{'key': 'FFmpegExtractAudio', 'preferredcodec': 'mp3'}],
+            'extractor_args': {
+                'youtube': {
+                    'player_client': ['android', 'ios']
+                }
+            },
             'quiet': True,
         }
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
