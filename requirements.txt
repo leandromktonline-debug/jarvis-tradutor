@@ -1,0 +1,5 @@
+python-telegram-bot
+yt-dlp
+groq
+google-generativeai
+edge-tts
